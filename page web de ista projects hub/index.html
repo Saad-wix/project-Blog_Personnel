@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil — ISTA Projects Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">|||</span> ISTA Projects Hub
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="#projets">Projets</a>
+        <a href="#apropos">À propos</a>
+        <span class="badge-group">DEVOWFS</span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <span class="tag-overline">LE BLOG DES PROJETS ÉTUDIANTS</span>
+      <h1>Découvrez les projets des stagiaires de l'ISTA Hay Hassani 1</h1>
+      <p class="hero-desc">
+        Des idées aux réalisations : explorez les projets de nos stagiaires, leurs démarches et les technologies qui leur donnent vie.
+      </p>
+
+      <!-- Barre de recherche -->
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Rechercher un projet, un mot-clé ou une technologie...">
+      </div>
+
+      <!-- Filtres par catégorie -->
+      <div class="filters-container">
+        <button class="filter-btn active" data-category="all">Tous</button>
+        <button class="filter-btn" data-category="web">Web & Full-Stack</button>
+        <button class="filter-btn" data-category="solidarite">Solidarité / Dons</button>
+        <button class="filter-btn" data-category="innovations">Innovations</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Grille des projets -->
+  <main class="container main-content" id="projets">
+    <div class="section-header">
+      <h2>Les projets à découvrir</h2>
+      <span class="count-badge" id="projectCount">2 projets</span>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <!-- Les cartes sont générées dynamiquement par main.js -->
+    </div>
+
+    <div class="no-results" id="noResults" style="display: none;">
+      <p>Aucun projet ne correspond à votre recherche.</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <strong>ISTA Projects Hub</strong>
+        <p>Les projets des stagiaires de l'ISTA Hay Hassani 1.</p>
+        <small>© 2026 ISTA Projects Hub</small>
+      </div>
+      <div class="footer-right">
+        <span class="concu-par">CONÇU PAR LE GROUPE DEVOWFS </span>
+        <p>Saad Zighem • Mohamed Karim • Reda Zakaria • Yassine DINAR</p>
+        <small>Un espace de partage et de découverte.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/articles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
